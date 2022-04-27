@@ -50,10 +50,11 @@
           <li><button type="button" class="btn">Дизайн</button></li>
           <li><button type="button" class="btn">Маркетинг</button></li>
         </ul>
-        <ul class="portfolio list">
-          <li class="element">
-             <div class="product-thumb">
-                   <a href="./portfolio.html">
+        <ul class="portfolio list"> 
+            
+            <li class="element">
+              <a href="./portfolio.html">
+             <div class="product-thumb">   
                    <img src="./images/portfolio1.jpg" alt="ноутбук" width="370">
                    <div class="product-overlay">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
@@ -63,7 +64,7 @@
                   <h2 class="text" >Технокряк</h2>
                   <p>Веб-сайт</p>
                </div>
-               </a>  
+              </a>
           </li>
           <li class="element">
             <a href="./portfolio.html">
@@ -195,3 +196,95 @@
      </footer>
 </body>
 </html>
+
+
+
+
+<li class="projects-li">
+  <a class="projects-link" href="#">
+    <div class="animated-section">
+      <img
+        class="projects-img"
+        src="./images/8.web-site.jpg"
+        width="370"
+        alt="Технокряк"
+      />
+      <p class="text-projects">
+        Ресурс предлагает комплексные предложения с разным уровнем
+        функционала и сервисов. Все это позволит посетителю получить
+        исчерпывающие сведения о компании или частном лице.
+      </p>
+    </div>
+    <div class="blok">
+      <h3>Технокряк</h3>
+      <p class="projects-p">Веб-сайт</p>
+    </div>
+  </a>
+</li>
+css ниже, в большом блоке:
+(нужно вставить между .projects-li:nth-last-child(-n + 3) {
+margin-bottom: 0;
+}  и .blok h3 {
+margin-top: 0;
+margin-bottom: 4px;
+})
+.projects-link {
+display: block;
+text-decoration: none;
+overflow: hidden;
+}
+
+.animated-section {
+height: 294px;
+overflow: hidden;
+}
+
+.projects-img {
+display: block;
+}
+
+.text-projects {
+display: flex;
+align-items: center;
+height: 294px;
+padding: 0 24px;
+
+font-weight: 400;
+font-size: 18px;
+line-height: 1.56;
+
+letter-spacing: 0.03em;
+color: #ffffff;
+background-color: #2196f3;
+
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projects-link:hover .text-projects {
+transform: translateY(-312px);
+}
+
+<li class="projects-li">
+              <a class="projects-link" href="#">
+                <div class="animated-section">
+                  <img
+                    class="projects-img"
+                    src="./images/8.web-site.jpg"
+                    width="370"
+                    alt="Технокряк"
+                  />
+                  <p class="text-projects">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+                <div class="blok">
+                  <h3>Технокряк</h3>
+                  <p class="projects-p">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+
+            
