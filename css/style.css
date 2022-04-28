@@ -718,7 +718,8 @@ a.item:focus .icon-smartphone {
         overflow: hidden;   
 }
 
-.element a:hover .product-overlay {
+.element a:hover .product-overlay,
+.element a:focus .product-overlay {
     opacity: 1;
     transform: translateY(0%);
 }
@@ -804,7 +805,7 @@ img {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        
 
         padding: 15px;
         min-width: 528px;
